@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .plus-button {
+            background-color: #ffffff;
+            border: none;
+            color: #4CAF50;
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .plus-button:hover {
+            background-color: #45a049;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Inventory Management System</h1>
+    <button class="plus-button">
+        <a href="/add">+</a>
+    </button>
+</header>
+<main>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Marke</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+            <th>Milliage</th>
+            <th>Pricce</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Toyota</td>
+            <td>Camry</td>
+            <td>2020</td>
+            <td>Blue</td>
+            <td>15000</td>
+            <td>20000.00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Honda</td>
+            <td>Civic</td>
+            <td>2019</td>
+            <td>Red</td>
+            <td>30000</td>
+            <td>18000.00</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ford</td>
+            <td>Mustang</td>
+            <td>2018</td>
+            <td>Black</td>
+            <td>25000</td>
+            <td>25000.00</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Chevrolet</td>
+            <td>Impala</td>
+            <td>2021</td>
+            <td>White</td>
+            <td>5000</td>
+            <td>27000.00</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>
