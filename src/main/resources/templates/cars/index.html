@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Inventory Management System</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
             background-color: #4CAF50;
             color: white;
@@ -21,22 +24,23 @@
         }
         header h1 {
             margin: 0;
-        }
-        a {
-            text-decoration: none;
-            color: #4CAF50;
-        }
-        .plus-button {
-            background-color: #ffffff;
-            border: none;
-            color: #4CAF50;
             font-size: 24px;
+        }
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .header-buttons button {
+            background-color: white;
+            border: none;
+            color: #218838;
+            font-size: 16px;
             padding: 10px 20px;
             cursor: pointer;
-            border-radius: 50%;
+            border-radius: 5px;
         }
-        .plus-button:hover {
-            background-color: #45a049;
+        .header-buttons button:hover {
+            background-color: #218838;
             color: white;
         }
         main {
@@ -61,7 +65,12 @@
 </head>
 <body>
 <header>
-    <h1>Inventory Management System</h1>
+    <h1>Car Inventory Management</h1>
+    <div class="header-buttons">
+        <button onclick="location.href='/cars'">See the available cars</button>
+        <button onclick="location.href='/cars/add'">Add new Car</button>
+        <button onclick="location.href='/'"><i class="fa fa-home" style="font-size:28px;color:green"></i></button>
+    </div>
 </header>
 <main>
     <table>

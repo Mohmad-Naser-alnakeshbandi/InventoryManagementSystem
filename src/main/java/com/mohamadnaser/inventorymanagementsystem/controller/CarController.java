@@ -1,5 +1,4 @@
 package com.mohamadnaser.inventorymanagementsystem.controller;
-
 import com.mohamadnaser.inventorymanagementsystem.models.CarModels;
 import com.mohamadnaser.inventorymanagementsystem.services.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
