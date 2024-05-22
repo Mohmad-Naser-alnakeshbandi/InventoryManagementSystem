@@ -1,73 +1,74 @@
 package com.mohamadnaser.inventorymanagementsystem.models;
+
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "cars")
 public class CarModels {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String Marke;
-    private String Model;
-    private String Year;
-    private String Color;
-    private String Milliage;
-    private String Priccee;
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private String marke;
+    private String model;
+    private String year;
+    private String color;
+    private String milliage;
+    private String priccee;
 
     public Long getId() {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getMarke() {
-        return Marke;
+        return marke;
     }
 
     public void setMarke(String marke) {
-        Marke = marke;
+        this.marke = marke;
     }
 
     public String getModel() {
-        return Model;
+        return model;
     }
 
     public void setModel(String model) {
-        Model = model;
+        this.model = model;
     }
 
     public String getYear() {
-        return Year;
+        return year;
     }
 
     public void setYear(String year) {
-        Year = year;
+        this.year = year;
     }
 
     public String getColor() {
-        return Color;
+        return color;
     }
 
     public void setColor(String color) {
-        Color = color;
+        this.color = color;
     }
 
     public String getMilliage() {
-        return Milliage;
+        return milliage;
     }
 
     public void setMilliage(String milliage) {
-        Milliage = milliage;
+        this.milliage = milliage;
     }
 
     public String getPriccee() {
-        return Priccee;
+        return priccee;
     }
 
     public void setPriccee(String priccee) {
-        Priccee = priccee;
+        this.priccee = priccee;
     }
 }

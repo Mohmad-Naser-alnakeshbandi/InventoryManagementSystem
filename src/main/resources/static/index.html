@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory Management System</title>
+    <title>Car Inventory Management System</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
             background-color: #4CAF50;
             color: white;
@@ -21,102 +22,81 @@
         }
         header h1 {
             margin: 0;
-        }
-        a{
-            text-decoration: none;
-        }
-        .plus-button {
-            background-color: #ffffff;
-            border: none;
-            color: #4CAF50;
             font-size: 24px;
+        }
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .header-buttons button {
+            background-color: white;
+            border: none;
+            color: #218838;
+            font-size: 16px;
             padding: 10px 20px;
             cursor: pointer;
-            border-radius: 50%;
+            border-radius: 5px;
         }
-        .plus-button:hover {
-            background-color: #45a049;
+        .header-buttons button:hover {
+            background-color: #218838;
             color: white;
         }
         main {
             padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50vh;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+        .intro {
+            margin-bottom: 20px;
         }
-        table, th, td {
-            border: 1px solid #ddd;
+        .intro h2 {
+            font-size: 28px;
+            color: #333;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
+        .intro p {
+            font-size: 18px;
+            color: #555;
         }
-        th {
-            background-color: #f2f2f2;
+        .car-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .car-images img {
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        img:hover {
+            cursor: pointer;
+            transform: translateY(-10px);
         }
     </style>
 </head>
 <body>
 <header>
-    <h1>Inventory Management System</h1>
-    <button class="plus-button">
-        <a href="/add">+</a>
-    </button>
+    <h1>Car Inventory Management</h1>
+    <div class="header-buttons">
+        <button onclick="location.href='/cars'">See the available cars</button>
+        <button onclick="location.href='/cars/add'">Add new Car</button>
+    </div>
 </header>
 <main>
-    <table>
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Marke</th>
-            <th>Model</th>
-            <th>Year</th>
-            <th>Color</th>
-            <th>Milliage</th>
-            <th>Pricce</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>Toyota</td>
-            <td>Camry</td>
-            <td>2020</td>
-            <td>Blue</td>
-            <td>15000</td>
-            <td>20000.00</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Honda</td>
-            <td>Civic</td>
-            <td>2019</td>
-            <td>Red</td>
-            <td>30000</td>
-            <td>18000.00</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Ford</td>
-            <td>Mustang</td>
-            <td>2018</td>
-            <td>Black</td>
-            <td>25000</td>
-            <td>25000.00</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Chevrolet</td>
-            <td>Impala</td>
-            <td>2021</td>
-            <td>White</td>
-            <td>5000</td>
-            <td>27000.00</td>
-        </tr>
-        </tbody>
-    </table>
+    <div class="intro">
+        <h2>Welcome to Car Inventory Management</h2>
+    </div>
+    <div class="car-images">
+        <a href="/cars/Benz"><img src="Images/Benz.png" alt="Car 1"></a>
+        <a href="/cars/BMW"><img src="Images/BMW.svg" alt="Car 2"></a>
+        <a href="/cars/Audi"><img src="Images/Audi.png" alt="Car 3"></a>
+        <a href="/cars/VW"><img src="Images/VW.svg" alt="Car 4"></a>
+    </div>
 </main>
 </body>
 </html>
